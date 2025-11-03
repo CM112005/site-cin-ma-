@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>Cinéma Pour Tous</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Cinéma Pour Tous</h1>
+    <nav>
+      <button id="tab-current">Films à l'affiche</button>
+      <button id="tab-archive">Archives</button>
+      <button id="tab-age">Suggestion par âge</button>
+    </nav>
+  </header>
+  <main>
+    <section class="search">
+      <input type="text" id="searchBar" placeholder="Cherche un film, acteur..." />
+    </section>
+    <section id="current" class="tab-content"></section>
+    <section id="archive" class="tab-content" style="display:none"></section>
+    <section id="age" class="tab-content" style="display:none">
+      <label for="ageSelect">Ton âge :</label>
+      <select id="ageSelect">
+        <option value="0">Tout âge</option>
+        <option value="6">6+</option>
+        <option value="10">10+</option>
+        <option value="14">14+</option>
+        <option value="18">18+</option>
+      </select>
+      <div id="ageResults"></div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Cinéma Pour Tous</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
