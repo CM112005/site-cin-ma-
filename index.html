@@ -1,41 +1,232 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-  <title>Cinéma Pour Tous</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8">
+  <title>Cinéma de la Ville</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
-    <h1>Cinéma Pour Tous</h1>
+    <h1>Cinéma de la Ville</h1>
     <nav>
-      <button id="tab-current">Films à l'affiche</button>
-      <button id="tab-archive">Archives</button>
-      <button id="tab-age">Suggestion par âge</button>
+      <ul>
+        <li><a href="#accueil">À l'affiche</a></li>
+        <li><a href="#avenir">Films à venir</a></li>
+        <li><a href="#passes">Films passés</a></li>
+      </ul>
     </nav>
   </header>
+  
   <main>
-    <section class="search">
-      <input type="text" id="searchBar" placeholder="Cherche un film, acteur..." />
+    <!-- À l'affiche en ce moment -->
+    <section id="accueil">
+      <h2>À l'affiche en ce moment</h2>
+      <div class="films">
+        <article class="film">
+          <img src="affiches/dune2.jpg" alt="Dune 2">
+          <h3>Dune 2</h3>
+          <p>En salle depuis le 10 novembre 2025</p>
+        </article>
+        <article class="film">
+          <img src="affiches/avatar2.jpg" alt="Avatar 2">
+          <h3>Avatar 2</h3>
+          <p>En salle depuis le 14 novembre 2025</p>
+        </article>
+        <article class="film">
+          <img src="affiches/intouchables.jpg" alt="Intouchables">
+          <h3>Intouchables</h3>
+          <p>En salle depuis le 1 novembre 2025</p>
+        </article>
+        <article class="film">
+          <img src="affiches/oppenheimer.jpg" alt="Oppenheimer">
+          <h3>Oppenheimer</h3>
+          <p>En salle depuis le 15 octobre 2025</p>
+        </article>
+        <article class="film">
+          <img src="affiches/barbie.jpg" alt="Barbie">
+          <h3>Barbie</h3>
+          <p>En salle depuis le 18 septembre 2025</p>
+        </article>
+        <article class="film">
+          <img src="affiches/joker2.jpg" alt="Joker : Folie à Deux">
+          <h3>Joker : Folie à Deux</h3>
+          <p>En salle depuis le 25 octobre 2025</p>
+        </article>
+        <article class="film">
+          <img src="affiches/elemental.jpg" alt="Elémental">
+          <h3>Elémental</h3>
+          <p>En salle depuis le 2 novembre 2025</p>
+        </article>
+        <article class="film">
+          <img src="affiches/guardians3.jpg" alt="Les Gardiens de la Galaxie Vol. 3">
+          <h3>Les Gardiens de la Galaxie Vol. 3</h3>
+          <p>En salle depuis le 4 novembre 2025</p>
+        </article>
+      </div>
     </section>
-    <section id="current" class="tab-content"></section>
-    <section id="archive" class="tab-content" style="display:none"></section>
-    <section id="age" class="tab-content" style="display:none">
-      <label for="ageSelect">Ton âge :</label>
-      <select id="ageSelect">
-        <option value="0">Tout âge</option>
-        <option value="6">6+</option>
-        <option value="10">10+</option>
-        <option value="14">14+</option>
-        <option value="18">18+</option>
-      </select>
-      <div id="ageResults"></div>
+
+    <!-- Films à venir -->
+    <section id="avenir">
+      <h2>Films à venir</h2>
+      <div class="films">
+        <article class="film">
+          <img src="affiches/starwars.jpg" alt="Star Wars Les Aventures de Rey">
+          <h3>Star Wars : Les Aventures de Rey</h3>
+          <p>Sortie prévue le 24 novembre 2025</p>
+        </article>
+        <article class="film">
+          <img src="affiches/batman.jpg" alt="Batman Legacy">
+          <h3>Batman Legacy</h3>
+          <p>Sortie prévue le 4 décembre 2025</p>
+        </article>
+        <article class="film">
+          <img src="affiches/spiderman.jpg" alt="Spiderman Multiverse">
+          <h3>Spiderman : Multiverse</h3>
+          <p>Sortie prévue le 18 décembre 2025</p>
+        </article>
+        <article class="film">
+          <img src="affiches/harrypotter.jpg" alt="Harry Potter et l'Héritier">
+          <h3>Harry Potter et l'Héritier</h3>
+          <p>Sortie prévue le 28 décembre 2025</p>
+        </article>
+        <article class="film">
+          <img src="affiches/avatar3.jpg" alt="Avatar 3">
+          <h3>Avatar 3</h3>
+          <p>Sortie prévue le 10 janvier 2026</p>
+        </article>
+        <article class="film">
+          <img src="affiches/deadpool3.jpg" alt="Deadpool 3">
+          <h3>Deadpool 3</h3>
+          <p>Sortie prévue le 25 janvier 2026</p>
+        </article>
+        <article class="film">
+          <img src="affiches/jurassicworld4.jpg" alt="Jurassic World 4">
+          <h3>Jurassic World 4</h3>
+          <p>Sortie prévue le 14 février 2026</p>
+        </article>
+        <article class="film">
+          <img src="affiches/fastx2.jpg" alt="Fast & Furious X: Part 2">
+          <h3>Fast & Furious X: Part 2</h3>
+          <p>Sortie prévue le 7 mars 2026</p>
+        </article>
+        <article class="film">
+          <img src="affiches/madmaxwasteland.jpg" alt="Mad Max: The Wasteland">
+          <h3>Mad Max: The Wasteland</h3>
+          <p>Sortie prévue le 21 mars 2026</p>
+        </article>
+        <article class="film">
+          <img src="affiches/shrek5.jpg" alt="Shrek 5">
+          <h3>Shrek 5</h3>
+          <p>Sortie prévue le 2 avril 2026</p>
+        </article>
+        <article class="film">
+          <img src="affiches/frozen3.jpg" alt="La Reine des Neiges 3">
+          <h3>La Reine des Neiges 3</h3>
+          <p>Sortie prévue le 18 avril 2026</p>
+        </article>
+        <article class="film">
+          <img src="affiches/minions3.jpg" alt="Les Minions 3">
+          <h3>Les Minions 3</h3>
+          <p>Sortie prévue le 5 mai 2026</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Films passés -->
+    <section id="passes">
+      <h2>Films passés</h2>
+      <div class="films">
+        <article class="film">
+          <img src="affiches/inception.jpg" alt="Inception">
+          <h3>Inception</h3>
+          <p>Diffusé le 7 septembre 2025</p>
+        </article>
+        <article class="film">
+          <img src="affiches/interstellar.jpg" alt="Interstellar">
+          <h3>Interstellar</h3>
+          <p>Diffusé le 14 juin 2025</p>
+        </article>
+        <article class="film">
+          <img src="affiches/titanic.jpg" alt="Titanic">
+          <h3>Titanic</h3>
+          <p>Diffusé le 20 mai 2025</p>
+        </article>
+        <article class="film">
+          <img src="affiches/avatar1.jpg" alt="Avatar">
+          <h3>Avatar</h3>
+          <p>Diffusé le 10 mars 2025</p>
+        </article>
+        <article class="film">
+          <img src="affiches/gladiator.jpg" alt="Gladiator">
+          <h3>Gladiator</h3>
+          <p>Diffusé le 3 février 2025</p>
+        </article>
+        <article class="film">
+          <img src="affiches/lotr_return.jpg" alt="Le Seigneur des Anneaux : Le Retour du Roi">
+          <h3>Le Seigneur des Anneaux : Le Retour du Roi</h3>
+          <p>Diffusé le 15 janvier 2025</p>
+        </article>
+        <article class="film">
+          <img src="affiches/pulpfiction.jpg" alt="Pulp Fiction">
+          <h3>Pulp Fiction</h3>
+          <p>Diffusé le 28 décembre 2024</p>
+        </article>
+        <article class="film">
+          <img src="affiches/leon.jpg" alt="Léon">
+          <h3>Léon</h3>
+          <p>Diffusé le 10 décembre 2024</p>
+        </article>
+        <article class="film">
+          <img src="affiches/jaws.jpg" alt="Les Dents de la Mer">
+          <h3>Les Dents de la Mer</h3>
+          <p>Diffusé le 15 novembre 2024</p>
+        </article>
+        <article class="film">
+          <img src="affiches/forrestgump.jpg" alt="Forrest Gump">
+          <h3>Forrest Gump</h3>
+          <p>Diffusé le 2 novembre 2024</p>
+        </article>
+        <article class="film">
+          <img src="affiches/starwars4.jpg" alt="Star Wars IV : Un Nouvel Espoir">
+          <h3>Star Wars IV : Un Nouvel Espoir</h3>
+          <p>Diffusé le 14 octobre 2024</p>
+        </article>
+        <article class="film">
+          <img src="affiches/drive.jpg" alt="Drive">
+          <h3>Drive</h3>
+          <p>Diffusé le 2 octobre 2024</p>
+        </article>
+        <article class="film">
+          <img src="affiches/thegodfather.jpg" alt="Le Parrain">
+          <h3>Le Parrain</h3>
+          <p>Diffusé le 12 septembre 2024</p>
+        </article>
+        <article class="film">
+          <img src="affiches/shawshank.jpg" alt="Les Évadés">
+          <h3>Les Évadés</h3>
+          <p>Diffusé le 28 août 2024</p>
+        </article>
+        <article class="film">
+          <img src="affiches/fightclub.jpg" alt="Fight Club">
+          <h3>Fight Club</h3>
+          <p>Diffusé le 14 août 2024</p>
+        </article>
+        <article class="film">
+          <img src="affiches/amelie.jpg" alt="Le Fabuleux Destin d’Amélie Poulain">
+          <h3>Le Fabuleux Destin d’Amélie Poulain</h3>
+          <p>Diffusé le 30 juillet 2024</p>
+        </article>
+        <article class="film">
+          <img src="affiches/et.jpg" alt="E.T. l’extra-terrestre">
+          <h3>E.T. l’extra-terrestre</h3>
+          <p>Diffusé le 20 juillet 2024</p>
+        </article>
+      </div>
     </section>
   </main>
+  
   <footer>
-    <p>&copy; 2025 Cinéma Pour Tous</p>
+    <p>&copy; 2025 Cinéma de la Ville</p>
   </footer>
-  <script src="script.js"></script>
 </body>
 </html>
